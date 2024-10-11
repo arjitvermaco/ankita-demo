@@ -1,7 +1,11 @@
 import Header from "./components/Header";
 import './App.css'
-import UserCard from "./components/UserCard";
+// import UserCard from "./components/UserCard";
+// import Binary from "./components/Binary";
+// import UseEffectDemo from "./components/UseStateDemo";
+import UseStateDemo from "./components/UseStateDemo";
 import Binary from "./components/Binary";
+import BasicForm from "./components/BasicForm";
 function App() {
 
     //  const userName = "ArjitVerma";
@@ -23,8 +27,11 @@ function App() {
     return (
         // JSX - JavaScript XML
         <>
-            <Header />
-            <Binary/>
+        <Binary/>
+        {/* <UseStateDemo/> */}
+        <BasicForm/>
+            {/* <Header />
+            <Binary/> */}
             {/* <UserCard userName={userName}
              userAge={userAge} userEmail={userEmail} /> */}
 
@@ -32,10 +39,10 @@ function App() {
                 return <p>Number is : {num}</p>
              })} */}
 
-             {users.map((user)=>{
+             {/* {users.map((user)=>{
                 return <UserCard userName={user.name}
                  userAge={user.age} userEmail={user.email} />
-             })}
+             })} */}
         </>
     )
 
