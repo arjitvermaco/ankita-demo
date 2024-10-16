@@ -6,6 +6,9 @@ import './App.css'
 import UseStateDemo from "./components/UseStateDemo";
 import Binary from "./components/Binary";
 import BasicForm from "./components/BasicForm";
+import UseEffectDemo from "./components/UseEffectDemo";
+import DemoTimer from "./components/DemoTimer";
+import TodoApp from "./components/TodoApp";
 function App() {
 
     //  const userName = "ArjitVerma";
@@ -15,21 +18,24 @@ function App() {
     //create an array with numbers from 1 to 15
     // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     //create an array with 5 users with different data
-    const users = [
-        {name: 'Alice', age: 30, email: 'alice@example.com'},
-        {name: 'Bob', age: 24, email: 'bob@example.com'},
-        {name: 'Charlie', age: 28, email: 'charlie@example.com'},
-        {name: 'Diana', age: 22, email: 'diana@example.com'},
-        {name: 'Ethan', age: 35, email: 'ethan@example.com'}
-    ]
+    // const users = [
+    //     {name: 'Alice', age: 30, email: 'alice@example.com'},
+    //     {name: 'Bob', age: 24, email: 'bob@example.com'},
+    //     {name: 'Charlie', age: 28, email: 'charlie@example.com'},
+    //     {name: 'Diana', age: 22, email: 'diana@example.com'},
+    //     {name: 'Ethan', age: 35, email: 'ethan@example.com'}
+    // ]
     
 
     return (
         // JSX - JavaScript XML
         <>
-        <Binary/>
+        <TodoApp/>
+        {/* <UseEffectDemo/> */}
+        {/* <DemoTimer/> */}
+        {/* <Binary/> */}
         {/* <UseStateDemo/> */}
-        <BasicForm/>
+        {/* <BasicForm/> */}
             {/* <Header />
             <Binary/> */}
             {/* <UserCard userName={userName}
