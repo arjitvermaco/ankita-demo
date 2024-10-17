@@ -4,13 +4,18 @@ export default function TodoApp() {
     //[Todos]
     const [todos,setTodos] = useState([]);
     const [inputValue,setInputValue] = useState('');
+  //this will run only one onLoad
+    useEffect(()=>{
+      const storedItems = localStorage.getItem('todos')
+      // console.log()
+      setTodos(JSON.parse(storedItems));
+    },[])
+
+    useEffect(()=>{
+      localStorage.setItem('todos',JSON.stringify(todos))
+    },[todos])
     
-    //
 
-
-    // useEffect(()=>{
-    //     console.log(todos)
-    // },[todos])
     function addTodo(e){
         e.preventDefault();
         let newTodo = {
