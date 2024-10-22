@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.heading-main{
+    @apply text-9xl text-yellow-100 text-center;
+}
